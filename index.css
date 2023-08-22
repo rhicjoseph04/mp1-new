@@ -1,0 +1,380 @@
+
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color:white;
+    color: white;
+    font-family: Roboto;
+    background-image: url(brownbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    
+  }
+
+  .content{
+    padding-bottom:100px;
+    box-sizing: border-box;
+    min-height:100%;
+    overflow-y:auto;
+    overflow-x:auto;
+
+
+  }
+
+
+  .navcolor{
+    background-color:lightblue;
+  }
+  .dropdown-menu {
+    background-color: #B4CDE6;
+  }
+
+  .nav-item a:hover{
+    color: blue;
+
+  }
+  
+  .bg {
+    background-color:white;
+  }
+  
+  .navcolor a {
+    color: black;
+  }
+  .row-content {
+    margin: 0px;
+  }
+  .nav svg {
+    margin: 3px;
+  }
+
+
+
+
+  
+  .card {
+    color: black;
+  }
+  .card .imgtwo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .card:hover .imgtwo {
+    display: inline;
+  }
+  
+  a.active {
+    color: gold !important;
+    background-color: rgb(242, 241, 237) !important;
+  }
+  li.active a.dropdown-toggle {
+    color: gold !important;
+  }
+  
+  .accordion-button {
+    background-color: lightblue!important;
+    color: black !important;
+  }
+  
+  .modal-content {
+    background-color: brown;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .modal-header {
+    color: gold;
+    text-align: center;
+  }
+  .accordion-body {
+    text-align: center !important;
+    background-color: white;
+  }
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .btn-store {
+    background-color: rgb(238, 77, 45) !important;
+    color: black !important;
+  }
+  .btn {
+    transition: 0.4s;
+  }
+  svg,
+  g {
+    transition: 0.4s;
+  }
+  
+
+/*form*/
+
+h1, h3 {
+  font-weight: 300;
+  }
+  h1 {
+  font-size: 30px;
+  }
+  h3 {
+  color: white;
+  }
+  .main-block, .info {
+  display: flex;
+  flex-direction: column;
+  }
+  .main-block {
+  justify-content: center;
+  align-items: center; 
+  width: 100%; 
+  min-height: 100%;
+  background: url() no-repeat content-box;
+  background-size: cover;
+  background-blend-mode: lighten ;
+  }
+
+
+  .form2{
+  width: 80%; 
+  padding: 25px;
+  margin-bottom: 20px;
+  background: lightblue;
+  }
+
+ .form2 input, select {
+  padding: 5px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  }
+
+  .form2 input::placeholder {
+  color: #eee;
+  }
+
+  .form2 option {
+  background: white; 
+  border: none;
+  }
+  .form2 .method {
+  display: flex; 
+  }
+  input[type=radio] {
+  display: none;
+  }
+  label.radio {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  text-indent: 32px;
+  cursor: pointer;
+  }
+  label.radio:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid #1c87c9;
+  }
+  label.radio:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  top: 5px;
+  left: 5px;
+  border-bottom: 3px solid #1c87c9;
+  border-left: 3px solid #1c87c9;
+  transform: rotate(-45deg);
+  opacity: 0;
+  }
+  input[type=radio]:checked + label:after {
+  opacity: 1;
+  }
+
+  .form2 button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto 0;
+  border: none;
+  border-radius: 5px; 
+  background: #1c87c9; 
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  }
+  .form2 button:hover {
+  background: #095484;
+  }
+  
+  
+   @media (min-width: 568px) {
+  .form2 .info {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  }
+  .form2 input {
+  width: 46%;
+  }
+  .form2 input.fname {
+  width: 100%;
+  }
+  .form2 select {
+  width: 48%;
+  }
+  }
+
+
+
+
+  .btn-store:hover {
+    background-color: white !important;
+    color: rgb(238, 77, 45) !important;
+    outline: rgb(238, 77, 45) !important;
+  }
+  .btn-store:hover svg g {
+    fill: rgb(238, 77, 45);
+  }
+
+  
+  .btn-primary {
+    background-color:lightblue !important;
+    color: white !important;
+  }
+  .btn-primary:hover {
+    background-color: black !important;
+    color: lightblue;
+    outline: lightblue;
+  }
+  
+  .store-zoom img:hover {
+    cursor: zoom-in;
+
+  }
+  .storeimagewhite {
+    background-color: black;
+  }
+  .card {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+  }
+  .modal-footer a svg:hover {
+    fill: gold;
+  }
+  .footer svg {
+    margin: 5px;
+  }
+  
+  ul {
+    list-style: inside;
+  }
+  
+  ul li {
+    text-transform: uppercase !important;
+  }
+  .tpl {
+    color: #9d9bb7;
+  }
+  .inquiry {
+    color: rgb(108, 119, 129);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+
+
+  /*footer*/
+
+  .footer{
+
+      padding-bottom: 5px;
+      padding-top:5px;
+      margin-bottom: 0;
+      
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  
+.social-icons svg{
+  color:black;
+}
+
+
+
+  .social-icons a:hover svg {
+ fill: black;    
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    html,
+    body {
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  }
+  
